@@ -402,6 +402,235 @@ img {
   }
 }
 
+.image-pading {
+  display: none;
+}
+
+.our-classes {
+  text-align: center;
+  color: var(--secondary--text--color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-image {
+  margin-top: 50px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.our-image:nth-child(3n + 1) {
+  margin-left: 0px;
+}
+
+.our-absolute-text {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.our-text {
+  color: var(--white--color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .image-pading {
+    display: block;
+  }
+}
+
+.ability-list-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.ability-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.ability-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ability-item:nth-child(1)::before {
+  background-image: url(../image/photo-secondary/occupation-group.svg);
+}
+
+.ability-item:nth-child(2)::before {
+  background-image: url(../image/photo-secondary/occupation-clock.svg);
+}
+
+.ability-item:nth-child(3)::before {
+  background-image: url(../image/photo-secondary/occupation-diagram.svg);
+}
+
+.ability-item:nth-child(4)::before {
+  background-image: url(../image/photo-secondary/occupation--astronaut.svg);
+}
+
+.ability-heading {
+  color: var(--secondary--text--color);
+  text-align: center;
+  line-height: 0.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 30px;
+}
+
+.ability-text {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .ability-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .ability-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .ability-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ability-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network-link {
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  transition-duration: 250ms;
+}
+
+.social-network-link:hover .social-network,
+.social-network-link:focus .social-network {
+  fill: var(--white--color);
+}
+
+.social-network-link:hover,
+.social-network-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-pading {
+  background: #F5F4FA;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team {
+  font-size: 28px;
+  line-height: 33px;
+  color: var(--secondary--text--color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-top: 30px;
+}
+
+.team-profession {
+  padding: 30px 0px;
+  background-color: var(--white--color);
+}
+
+.team-name {
+  text-align: center;
+  color: var(--secondary--text--color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .team-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  .team-pading {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-item {
+    margin-top: 50px;
+  }
+}
+
 .dic {
   color: rebeccapurple;
   margin: 0px;
