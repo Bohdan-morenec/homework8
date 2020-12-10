@@ -1118,9 +1118,4 @@ input[type="checkbox"]:checked + .checkbox-text::before {
     flex-basis: calc(100% / 6 - 30px);
   }
 }
-
-.dic {
-  color: rebeccapurple;
-  margin: 0px;
-}
 /*# sourceMappingURL=main.css.map */
