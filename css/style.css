@@ -68,16 +68,14 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+
+
 .header-container {
     display: flex;
     justify-content: space-between; 
-    /* align-items: center;
-    justify-content:flex-end; */
-}
-
-.pop-up-menu {
-    /* display: none; */
-    
 }
 .logo {
     font-family: Raleway, sans-serif;
@@ -94,15 +92,8 @@ img {
 .test {
     display: none;
 }
-.navigat {
-    /* display: inline-flex;
-    align-items: center;
-    margin-right: auto; */
-    /* display: flex; */
-}
 .menu {
     text-align: center; 
-    /* display: inline-flex; */
 }
 .nav-indent {
     margin-top: 52px;

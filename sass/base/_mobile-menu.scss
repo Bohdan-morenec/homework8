@@ -1,0 +1,45 @@
+.mobile-test {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding-bottom: 60px;
+    z-index: 1;
+    background-color: var(--white--color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.mobile-test.is-open {
+    display: block;
+}
+.inline-block li {
+    text-align: center;
+}
+.header-btn {
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: none;
+    background-color: var(--white--color);
+}
+.header-btn .icon-cross {
+display: none;
+}
+.header-btn.is-open .icon-cross {
+    display: block;
+}
+.header-btn.is-open .icon-menu {
+    display: none;
+}
+.header-btn:focus .mobile-menu {
+    fill: var(--accent-color);
+}
+.mobile-menu {
+    width: 24px;
+    height: 18px;
+}
+.mobile-menu:hover {
+    fill: var(--accent-color);
+}
