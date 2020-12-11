@@ -8,9 +8,10 @@
     z-index: 1;
     background-color: var(--white--color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-}
-.mobile-test.is-open {
+
+&.is-open {
     display: block;
+}
 }
 .inline-block li {
     text-align: center;
@@ -23,23 +24,25 @@
     padding-left: 0px;
     border: none;
     background-color: var(--white--color);
-}
-.header-btn .icon-cross {
+
+& .icon-cross {
 display: none;
 }
-.header-btn.is-open .icon-cross {
+&.is-open .icon-cross {
     display: block;
 }
-.header-btn.is-open .icon-menu {
+&.is-open .icon-menu {
     display: none;
 }
-.header-btn:focus .mobile-menu {
+&:focus .mobile-menu {
     fill: var(--accent-color);
+}
 }
 .mobile-menu {
     width: 24px;
     height: 18px;
-}
-.mobile-menu:hover {
+
+&:hover {
     fill: var(--accent-color);
+}
 }

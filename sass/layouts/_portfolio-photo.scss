@@ -149,9 +149,10 @@ transform: translateY(-0%);
     .services {
         flex-basis: calc(100% / 3 - 30px);
         margin-top: 30px;
-    }
-    .services:nth-child(1) {
+    
+    &:nth-child(1) {
         margin-top: 30px;
+    }
     }
     .pop-up-text {
         font-size: 18px;

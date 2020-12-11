@@ -10,25 +10,26 @@
     border-radius: 4px;
     background-color:#2F303A;
     color:var(--white--color);
-}
-.mailing:focus::placeholder {
+
+&:focus::placeholder {
     color: var(--white--color);
 }
-.mailing:-webkit-autofill,
-.mailing:-webkit-autofill:hover, 
-.mailing:-webkit-autofill:focus {
+&:-webkit-autofill,
+&:-webkit-autofill:hover, 
+&:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--white--color);
     -webkit-box-shadow: 0 0 0px 1000px #2F303A inset;
+}
+&:focus {
+    color: var(--white--color);
+    border: 1px solid var(--accent-color);   
+}
 }
 .modall-input:-webkit-autofill,
 .modall-input:-webkit-autofill:hover, 
 .modall-input:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--secondary--text--color);
     -webkit-box-shadow: 0 0 0px 1000px var(--white--color) inset;
-}
-.mailing:focus {
-    color: var(--white--color);
-    border: 1px solid var(--accent-color);   
 }
 .btn-mailing {
     position: relative;
@@ -45,15 +46,16 @@
     font-size: 16px;
     line-height: 1.47;
     letter-spacing: 0.06em;
-}
-.btn-mailing:focus,
-.btn-mailing:hover{
+
+&:focus,
+&:hover{
     color: var(--accent-color);
     background-color: var(--white--color);
 }
-.btn-mailing:focus .mailing-icons,
-.btn-mailing:hover .mailing-icons{
+&:focus .mailing-icons,
+&:hover .mailing-icons{
     fill: var(--accent-color);
+}
 }
 .mailing-icons {
     position: absolute;

@@ -34,20 +34,22 @@
     height:90px;
     border-radius: 4px;
     transition-duration: 250ms;
-}
-.Regular-ustomers-link:hover svg,
-.Regular-ustomers-link:focus svg {
+
+&:hover svg,
+&:focus svg {
     fill: var(--accent-color);
 }
-.Regular-ustomers-link:hover,
-.Regular-ustomers-link:focus {
+&:hover,
+&:focus {
     border: solid var(--accent-color);
+}
 }
 .Regular-ustomers-image {
     fill: var(--main--text--color);
-}
-.Regular-ustomers-item:last-child {
+
+&:last-child {
     margin-right: 0px;
+}
 }
 @media screen and (min-width: 768px) {
     .Regular-ustomers-item {

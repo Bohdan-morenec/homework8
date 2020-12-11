@@ -10,14 +10,15 @@
     display: flex;
     border-radius: 50%;
     transition-duration: 250ms;
-}
-.social-network-link:hover .social-network,
-.social-network-link:focus .social-network {
+
+&:hover .social-network,
+&:focus .social-network {
     fill: var(--white--color);
 }
-.social-network-link:hover,
-.social-network-link:focus {
+&:hover,
+&:focus {
     background-color:var(--accent-color);
+}
 }
 .social-network-item:not(:last-child) {
     margin-right: 10px;

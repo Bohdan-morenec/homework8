@@ -2,10 +2,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.ability-item:not(:last-child) {
+.ability-item {
+&:not(:last-child) {
     margin-bottom: 30px;
 }
-.ability-item::before {
+&::before {
     content: '';
     display: block;
     height: 120px;
@@ -14,17 +15,18 @@
     background-repeat:no-repeat;
     background-position: center;
 }
-.ability-item:nth-child(1)::before {
+&:nth-child(1)::before {
     background-image: url(../image/photo-secondary/occupation-group.svg);
 }
-.ability-item:nth-child(2)::before {
+&:nth-child(2)::before {
     background-image: url(../image/photo-secondary/occupation-clock.svg);
 }
-.ability-item:nth-child(3)::before {
+&:nth-child(3)::before {
     background-image: url(../image/photo-secondary/occupation-diagram.svg);
 }
-.ability-item:nth-child(4)::before {
+&:nth-child(4)::before {
     background-image: url(../image/photo-secondary/occupation--astronaut.svg);
+}    
 }
 .ability-heading {
     color: var(--secondary--text--color);
@@ -54,9 +56,10 @@
         flex-basis: calc(100% / 2 - 30px);
         margin-top: 30px;
         margin-left: 30px;
-    }
-    .ability-item:not(:last-child) {
+    
+    &:not(:last-child) {
         margin-bottom: 0px; 
+}
 }
 }
 @media screen and (min-width: 1200px) {

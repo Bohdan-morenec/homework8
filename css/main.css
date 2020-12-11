@@ -356,8 +356,7 @@ img {
   fill: var(--white--color);
 }
 
-.social-network-link:hover,
-.social-network-link:focus {
+.social-network-link:hover, .social-network-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -383,11 +382,14 @@ img {
   color: var(--white--color);
 }
 
-.mailing:-webkit-autofill,
-.mailing:-webkit-autofill:hover,
-.mailing:-webkit-autofill:focus {
+.mailing:-webkit-autofill, .mailing:-webkit-autofill:hover, .mailing:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--white--color);
   -webkit-box-shadow: 0 0 0px 1000px #2F303A inset;
+}
+
+.mailing:focus {
+  color: var(--white--color);
+  border: 1px solid var(--accent-color);
 }
 
 .modall-input:-webkit-autofill,
@@ -395,11 +397,6 @@ img {
 .modall-input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--secondary--text--color);
   -webkit-box-shadow: 0 0 0px 1000px var(--white--color) inset;
-}
-
-.mailing:focus {
-  color: var(--white--color);
-  border: 1px solid var(--accent-color);
 }
 
 .btn-mailing {
@@ -419,8 +416,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.btn-mailing:focus,
-.btn-mailing:hover {
+.btn-mailing:focus, .btn-mailing:hover {
   color: var(--accent-color);
   background-color: var(--white--color);
 }
@@ -802,8 +798,7 @@ input[type="checkbox"]:checked + .checkbox-text::before {
   transition-duration: 250ms;
 }
 
-.hero-button:focus,
-.hero-button:hover {
+.hero-button:focus, .hero-button:hover {
   color: var(--accent-color);
   background-color: var(--white--color);
 }
@@ -1085,8 +1080,7 @@ input[type="checkbox"]:checked + .checkbox-text::before {
   fill: var(--accent-color);
 }
 
-.Regular-ustomers-link:hover,
-.Regular-ustomers-link:focus {
+.Regular-ustomers-link:hover, .Regular-ustomers-link:focus {
   border: solid var(--accent-color);
 }
 
@@ -1094,7 +1088,7 @@ input[type="checkbox"]:checked + .checkbox-text::before {
   fill: var(--main--text--color);
 }
 
-.Regular-ustomers-item:last-child {
+.Regular-ustomers-image:last-child {
   margin-right: 0px;
 }
 
