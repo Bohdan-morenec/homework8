@@ -74,6 +74,67 @@ img {
   margin-right: auto;
 }
 
+.mobile-test {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding-bottom: 60px;
+  z-index: 1;
+  background-color: var(--white--color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mobile-test.is-open {
+  display: block;
+}
+
+.inline-block li {
+  text-align: center;
+}
+
+.header-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border: none;
+  background-color: var(--white--color);
+}
+
+.header-btn .icon-cross {
+  display: none;
+}
+
+.header-btn.is-open .icon-cross {
+  display: block;
+}
+
+.header-btn.is-open .icon-menu {
+  display: none;
+}
+
+.header-btn:focus .mobile-menu {
+  fill: var(--accent-color);
+}
+
+.mobile-menu {
+  width: 24px;
+  height: 18px;
+}
+
+.mobile-menu:hover {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-test.container {
+    display: none;
+  }
+}
+
 .header {
   position: relative;
   padding-top: 16px;
@@ -237,216 +298,6 @@ img {
   }
   .text-nav::after {
     margin-top: 36px;
-  }
-  .mobile-test.container {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .address-header-svg {
-    margin-top: -4px;
-  }
-  .test {
-    align-items: center;
-  }
-  .logo {
-    margin-top: 0px;
-  }
-  .menu {
-    margin-top: 0px;
-    margin-right: 305px;
-  }
-  .nav-indent:last-child {
-    margin-right: 0px;
-  }
-  .menu-2 {
-    display: flex;
-  }
-  .address-indent {
-    margin-top: 0px;
-  }
-  .address-indent:not(:last-child) {
-    margin-right: 30px;
-  }
-  .text-nav::after {
-    margin-top: 27px;
-  }
-}
-
-.header {
-  position: relative;
-  padding-top: 16px;
-  padding-bottom: 11px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  font-family: Raleway, sans-serif;
-  color: var(--secondary--text--color);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.blue {
-  color: var(--accent-color);
-}
-
-.test {
-  display: none;
-}
-
-.menu {
-  text-align: center;
-}
-
-.nav-indent {
-  margin-top: 52px;
-}
-
-.nav-indent:nth-child(1) {
-  margin-top: 60px;
-}
-
-.nav-indent:last-child {
-  margin-right: 0px;
-}
-
-.text-nav {
-  position: relative;
-  color: var(--secondary--text--color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.text-nav::after {
-  position: absolute;
-  content: "";
-  border: 2px solid var(--accent-color);
-  border-radius: 4px;
-  left: 0px;
-  right: 0;
-  display: block;
-  margin-top: 3px;
-  background-color: var(--accent-color);
-  pointer-events: none;
-  opacity: 0;
-  transition-duration: 250ms;
-}
-
-.text-nav:hover::after, .text-nav:focus::after {
-  opacity: 1;
-}
-
-.color-here {
-  color: var(--accent-color);
-}
-
-.color-here::after {
-  opacity: 1;
-}
-
-.address-indent {
-  margin-top: 16px;
-}
-
-.address-indent:nth-child(1) {
-  margin-top: 60px;
-}
-
-.address-header {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.address-header:hover .envelope-svg,
-.address-header:focus .envelope-svg {
-  fill: #2196F3;
-}
-
-.address-header:hover .address-header-svg,
-.address-header:focus .address-header-svg {
-  fill: #2196F3;
-}
-
-.envelope-svg {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-  fill: var(--main--text--color);
-}
-
-.address-header-svg {
-  height: 16px;
-  width: 10px;
-  margin-right: 10px;
-  align-items: center;
-  fill: var(--main--text--color);
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-  .header-btn {
-    display: none;
-  }
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-  .test {
-    display: flex;
-  }
-  .logo {
-    margin-top: 5px;
-  }
-  .menu {
-    display: flex;
-    margin-top: 11px;
-  }
-  .nav-indent {
-    margin-right: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .nav-indent:nth-child(1) {
-    margin-top: 0px;
-  }
-  .nav-indent:last-child {
-    margin-right: 62px;
-  }
-  .text-nav:nth-child(3) {
-    margin-right: 62px;
-  }
-  .address-indent {
-    margin-top: 10px;
-  }
-  .address-indent:nth-child(1) {
-    margin-top: 0px;
-  }
-  .menu-2 {
-    display: block;
-  }
-  .text-nav::after {
-    margin-top: 36px;
-  }
-  .mobile-test.container {
-    display: none;
   }
 }
 

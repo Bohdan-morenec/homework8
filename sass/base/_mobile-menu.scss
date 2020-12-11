@@ -46,3 +46,8 @@ display: none;
     fill: var(--accent-color);
 }
 }
+@media screen and (min-width: 768px) {
+    .mobile-test.container {
+        display: none;
+    }
+}
