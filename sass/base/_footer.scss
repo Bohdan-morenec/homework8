@@ -57,19 +57,20 @@
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
     transition-duration: 250ms;
+
+&:hover .social-network-footer,
+&:focus .social-network-footer {
+    fill: var(--white--color);
+}
+&:hover,
+&:focus {
+    background-color:var(--accent-color);
+}
 }
 .social-network-footer {
         height: 20px;
         width: 20px;
         fill: var(--white--color);
-}
-.social-network-footer-link:hover .social-network-footer,
-.social-network-footer-link:focus .social-network-footer {
-    fill: var(--white--color);
-}
-.social-network-footer-link:hover,
-.social-network-footer-link:focus {
-    background-color:var(--accent-color);
 }
 .mailing-box {
     margin-top: 60px;

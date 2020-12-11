@@ -1,3 +1,8 @@
+.header {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 11px;
+}
 .header-container {
     display: flex;
     justify-content: space-between; 
@@ -22,20 +27,21 @@
 }
 .nav-indent {
     margin-top: 52px;
-}
-.nav-indent:nth-child(1) {
+
+&:nth-child(1) {
     margin-top: 60px;
 }
-.nav-indent:last-child {
+&:last-child {
     margin-right: 0px;
+}
 }
 .text-nav {
     position: relative;
     color: var(--secondary--text--color);
     font-weight: 500;
     letter-spacing: 0.02em;
-}
-.text-nav::after {
+
+&::after {
     position: absolute;
     content: "";
     border: 2px solid var(--accent-color);
@@ -49,33 +55,37 @@
     opacity: 0;
     transition-duration: 250ms;
 }
-.text-nav:hover::after,
- .text-nav:focus::after{
+&:hover::after,
+&:focus::after{
      opacity: 1;
 }
-.color-here::after {
-    opacity: 1;
 }
 .color-here {
     color: var(--accent-color);
-}   
-.address-indent:nth-child(1) {
-    margin-top: 60px;
+
+&::after {
+    opacity: 1;
+}
 }
 .address-indent {
     margin-top: 16px;
+   
+&:nth-child(1) {
+    margin-top: 60px;
+}
 }
 .address-header {
     font-weight: 500;
     letter-spacing: 0.02em;
-}
-.address-header:hover .envelope-svg,
-.address-header:focus .envelope-svg{
+
+&:hover .envelope-svg,
+&:focus .envelope-svg{
     fill: #2196F3;
 }
-.address-header:hover .address-header-svg,
-.address-header:focus .address-header-svg {
+&:hover .address-header-svg,
+&:focus .address-header-svg {
     fill: #2196F3;
+}
 }
 .envelope-svg{
     height: 12px;
@@ -90,6 +100,7 @@
     align-items: center;
     fill: var(--main--text--color);
 }
+
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
@@ -115,21 +126,23 @@
         margin-right: 50px;
         margin-top: 0px;
         margin-bottom: 0px;
-    }
-    .nav-indent:nth-child(1) {
+    
+    &:nth-child(1) {
         margin-top: 0px;
     }
-    .nav-indent:last-child {
+    &:last-child {
         margin-right:62px;
+    }
     }
     .text-nav:nth-child(3) {
         margin-right: 62px;
     }
-    .address-indent:nth-child(1) {
-        margin-top: 0px;
-    }
     .address-indent {
         margin-top: 10px;
+    
+    &:nth-child(1) {
+        margin-top: 0px;
+    }
     }
     .menu-2 {
         display: block;
@@ -170,9 +183,10 @@
     }
     .address-indent {
         margin-top: 0px;
-    }
-    .address-indent:not(:last-child) {
+    
+    &:not(:last-child) {
         margin-right: 30px;
+    }
     }
     .text-nav::after {
         margin-top: 27px;

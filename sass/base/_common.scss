@@ -37,10 +37,11 @@ img {
     text-decoration: none;
     color: inherit;
     transition-duration: 250ms;
-}
-.link:focus,
-.link:hover {
+
+&:focus,
+&:hover {
     color: var(--accent-color);
+}
 }
 .container {
     width: 480px;

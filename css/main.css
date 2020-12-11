@@ -62,8 +62,7 @@ img {
   transition-duration: 250ms;
 }
 
-.link:focus,
-.link:hover {
+.link:focus, .link:hover {
   color: var(--accent-color);
 }
 
@@ -73,6 +72,12 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 11px;
 }
 
 .header-container {
@@ -136,12 +141,7 @@ img {
   transition-duration: 250ms;
 }
 
-.text-nav:hover::after,
-.text-nav:focus::after {
-  opacity: 1;
-}
-
-.color-here::after {
+.text-nav:hover::after, .text-nav:focus::after {
   opacity: 1;
 }
 
@@ -149,12 +149,16 @@ img {
   color: var(--accent-color);
 }
 
-.address-indent:nth-child(1) {
-  margin-top: 60px;
+.color-here::after {
+  opacity: 1;
 }
 
 .address-indent {
   margin-top: 16px;
+}
+
+.address-indent:nth-child(1) {
+  margin-top: 60px;
 }
 
 .address-header {
@@ -222,11 +226,11 @@ img {
   .text-nav:nth-child(3) {
     margin-right: 62px;
   }
-  .address-indent:nth-child(1) {
-    margin-top: 0px;
-  }
   .address-indent {
     margin-top: 10px;
+  }
+  .address-indent:nth-child(1) {
+    margin-top: 0px;
   }
   .menu-2 {
     display: block;
@@ -506,20 +510,19 @@ img {
   transition-duration: 250ms;
 }
 
-.social-network-footer {
-  height: 20px;
-  width: 20px;
-  fill: var(--white--color);
-}
-
 .social-network-footer-link:hover .social-network-footer,
 .social-network-footer-link:focus .social-network-footer {
   fill: var(--white--color);
 }
 
-.social-network-footer-link:hover,
-.social-network-footer-link:focus {
+.social-network-footer-link:hover, .social-network-footer-link:focus {
   background-color: var(--accent-color);
+}
+
+.social-network-footer {
+  height: 20px;
+  width: 20px;
+  fill: var(--white--color);
 }
 
 .mailing-box {
@@ -626,8 +629,7 @@ img {
   background-color: var(--white--color);
 }
 
-.btn-close:focus,
-.btn-close:hover {
+.btn-close:focus, .btn-close:hover {
   color: var(--accent-color);
 }
 
@@ -753,8 +755,7 @@ input[type="checkbox"]:checked + .checkbox-text::before {
   border: none;
 }
 
-.modall-btn:focus,
-.modall-btn:hover {
+.modall-btn:focus, .modall-btn:hover {
   color: var(--accent-color);
   background-color: var(--white--color);
 }
