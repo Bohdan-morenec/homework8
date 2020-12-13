@@ -20,6 +20,7 @@ html {
 *::before
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -433,7 +434,6 @@ img {
   position: absolute;
   width: 24px;
   height: 24px;
-  margin-bottom: 16px;
   margin-left: 10px;
   fill: var(--white--color);
   transition-duration: 250ms;
@@ -763,6 +763,14 @@ input[type="checkbox"]:checked + .checkbox-text::before {
   .modal {
     width: 528px;
     height: 581px;
+  }
+  .checkbox-box {
+    justify-content: center;
+  }
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
   }
 }
 

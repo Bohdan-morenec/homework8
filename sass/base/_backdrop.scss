@@ -161,4 +161,12 @@ input[type="checkbox"]:checked + .checkbox-text::before {
         width: 528px;
         height: 581px;
     }
+    .checkbox-box {
+        justify-content: center;
+    }
+    .checkbox-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
 }
